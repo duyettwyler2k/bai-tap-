@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let array8 = ["a","b","c", "b"];
+    let valueToRemove = "b";
+    function removeElement(arr,valueToRemove) {
+        for (let i = 0; i < arr.length; i++) {
+            if (arr[i] === valueToRemove) {
+                arr.splice(i,1);
+                i--;
+            }
+        }
+    }
+    removeElement(array8, valueToRemove);
+    console.log("8. " + array8);
+</script>
+</body>
+</html>

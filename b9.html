@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let array9 = ["a","b","c"];
+    let findValue = "b";
+    function findIndex(array,value) {
+        let result = -1;
+        for (let i = 0; i < array.length; i++) {
+            if (array[i] === value) {
+                result = i;
+            }
+        }
+        return result;
+    }
+    console.log("9. " + findIndex(array9,findValue));
+
+</script>
+</body>
+</html>

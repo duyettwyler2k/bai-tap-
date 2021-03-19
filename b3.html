@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+let arr=[]
+for(let i=0;i<3;i++){
+    arr[i]=prompt('number');
+}
+function minmax(array){
+    let max=array[0];
+    let min=array[0];
+    for (let i=0;i<array.length;i++){
+        if(max<array[i]){
+            max=array[i];
+        }
+        if(min>array[i]) {
+            min=array[i]
+        }
+    }
+    return[max,min];
+}
+document.write("3. " + minmax(arr))
+
+</script>
+</body>
+</html>

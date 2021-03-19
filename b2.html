@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    var a=tBc()
+    function tBc(b) {
+        b = prompt("Nhập độ dài mảng")
+        var array = []
+        var total = 0;
+        if (b < 1) {
+            alert("Độ dài mảng không đủ")
+        } else if (b == 1) {
+            alert("Trung bình cộng = " + b)
+        } else {
+            for (let i = 0; i < b; i++) {
+                array[i] = parseInt(prompt("Nhập số phần tử"));
+                total += array[i];
+            }
+            alert("Trung bình cộng của mảng là = " + total / array.length)
+        }
+    }
+
+
+</script>
+</body>
+</html>
